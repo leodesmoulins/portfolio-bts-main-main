@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="image/code.png" type="image/png">
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!sessionStorage.getItem('isLoggedIn')) {
+                window.location.href = './html/login.html'; // Chemin vers la page de connexion
+            }
+        });
+    </script>
+    <div id="navbar-container"></div>
+    
+    
+    <section id="apropos">
+        <div class="container">
+            <div class="part-text">
+                <h1 class="title-apropos">Léo Desmoulins</h1>
+                <p class="subtitle-apropos">Développeur Web</p> 
+                <p class="etude-apropos">Étudiant en BTS SIO</p>
+            </div>
+        </div>
+        <h1 class="title2-apropos">A propos de moi</h1>
+        <hr class="hr-apropos">
+        <p class="text-apropos">
+            Salut, moi c'est léo, jeune développeur passionné par le developpement. J'adore le developpement web, 
+            mais j'aime aussi les nouvelles technologies et ce qui a trait à <span class="text-apropos-couleur">l'UI</span>.
+        </p>
+        <p class="text-apropos">
+            <span class="text-apropos-couleur">Le front</span> : j'ai découvert le developpement web avec le front, 
+            j'ai donc plus d'attache au front que le back.
+        </p>
+        <p class="text-apropos">
+            <span class="text-apropos-couleur">Le back</span> : Au fur et à mesure de mes recherches,
+            je deviens tout autant intéressé par le back que le front pour le developpement web
+        </p>
+        <p class="text-apropos">
+            Curieux de nature, j'aime apprendre et l'informatique est le terrain de jeu parfait pour cela ! 
+            Il me reste encore beaucoup (énormement) de chose à apprendre, 
+            mais je suis prêt à lire toute les documentations pour m'améliorer.
+        </p>
+    </section>
+    
+
+    <div id="footer-container"></div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
